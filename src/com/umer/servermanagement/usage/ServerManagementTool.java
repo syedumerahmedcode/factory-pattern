@@ -1,4 +1,4 @@
-package com.umer.server.usage;
+package com.umer.servermanagement.usage;
 
 import java.util.Scanner;
 
