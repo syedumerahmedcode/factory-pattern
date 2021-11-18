@@ -14,7 +14,12 @@
 
 ## Introduction
 
-- To be defined.
+The aim of this project is to show case how to create types of classes(which originate from an Interface/Abstract class) and create objects dynamically. Otherwise, without factory method pattern, we have to create objects at compile time which increases coupling but also code harder to extend for future requirements.
+
+The example used in this project is as follows:
+
+- Describe scenario
+- Insert architecture diagram
 
 ## Out Of Scope
 
@@ -22,7 +27,11 @@
 
 ## Explanation Factory Pattern
 
-- To be defined.
+The definition from `Gang of Four` book is as follows:
+
+"Define an interface for creating an object, but you let the subclasses decide which class to instantiate. Factory method lets a class defer initiation to sub-classes."
+
+- To be expanded further.
 
 ## Explanation Other Important Points
 
