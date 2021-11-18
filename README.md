@@ -16,10 +16,6 @@
 
 The aim of this project is to show case how to create types of classes(which originate from an Interface/Abstract class) and create objects dynamically. Otherwise, without factory method pattern, we have to create objects at compile time which increases coupling but also code harder to extend for future requirements.
 
-The example used in this project is as follows:
-
-- Describe scenario
-- Insert architecture diagram
 
 ## Out Of Scope
 
@@ -33,9 +29,30 @@ The definition from `Gang of Four` book is as follows:
 
 - To be expanded further.
 
+
+
+The scenario used in this project is as follows:
+
+- Describe scenario
+We have different types of server(for now, let's consider two types: _MailServer_ and _FTPServer_). We have a troubleshooting application which takes server name as input from command line based on the name of the server, it will resolve the issue. 
+
+- Insert architecture diagram
+
+Please note that we do not know which type of server the user will input before the application starts running. It is in this scenario that factory method is well suited as we can create the appropriate server object at runtime using polymorphism.  
+
+
+- Explain the solution
+
+**Extensibility:**
+- Explain how further server types can be handled in the future. 
+
 ## Explanation Other Important Points
 
 - To be defined.
+
+**Possible use cases in which factory method applies:**
+
+- define use cases(Give 2-3 use cases)
 
 ## Technologies Used
 
