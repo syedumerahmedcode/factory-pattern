@@ -29,7 +29,7 @@ The example used in this project is as follows:
 
 The definition from `Gang of Four` book is as follows:
 
-"Define an interface for creating an object, but you let the subclasses decide which class to instantiate. Factory method lets a class defer initiation to sub-classes."
+`"Define an interface for creating an object, but you let the subclasses decide which class to instantiate. Factory method lets a class defer initiation to sub-classes."`
 
 - To be expanded further.
 
