@@ -16,6 +16,10 @@
 
 The aim of this project is to show case how to create types of classes(which originate from an Interface/Abstract class) and create objects dynamically. Otherwise, without factory method pattern, we have to create objects at compile time which increases coupling but also code harder to extend for future requirements.
 
+In simple words, Use the Factory Method when you don’t know beforehand the exact types and dependencies of the objects your code should work with.
+
+The Factory Method separates object(also known as product in some books) construction code from the code that actually uses the object. Therefore it’s easier to extend the object construction code independently from the rest of the code.
+
 
 ## Out Of Scope
 
