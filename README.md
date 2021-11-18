@@ -78,7 +78,7 @@ Feature requests, issues, pull requests and questions are welcome.
 
 - [1](https://www.youtube.com/watch?v=mTzDf_EZ1aM): Understanding The Factory Design Pattern **(Youtube)** **[Primary Video resource for this project]**
 - [2](https://www.youtube.com/watch?v=EcFVTgRHJLM): Factory Method Pattern – Design Patterns **(Youtube)**
-- [3](https://www.youtube.com/watch?v=v-GiuMmsXj4): Abstract Factory Pattern – Design Patterns **(Youtube)** **(What this example is not!!!)**
+- [3](https://www.youtube.com/watch?v=v-GiuMmsXj4): Abstract Factory Pattern – Design Patterns **(Youtube)** **[What this example is not!!!]**
 - [4](https://github.com/RefactoringGuru/design-patterns-java/tree/master/src/refactoring_guru/factory_method/example):  RefactoringGuru /
 design-patterns-java **(GitHub)**
 
