@@ -68,7 +68,7 @@ None
 
 ## Commands
 
-- To be defined.
+In order to run the project, open project in an IDE ---> Navigate to _com.umer.servermanagement.usage_ package ---> Right click on _ServerManagementTool.java_ ---> Run As ---> Java Application ---> Enter appropriate input.
 
 ## Contribution
 
