@@ -4,7 +4,7 @@
 - [Introduction](#introduction)
 - [Out Of Scope](#out-of-scope)
 - [Explanation Factory Pattern](#explanation-factory-pattern)
-- [Explanation Other important Points](#explanation-other-important-points)
+- [Explanation Other Important Points](#explanation-other-important-points)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
 - [Commands](#commands)
@@ -40,7 +40,7 @@ Basically, this means that we have an interface and classes implement that inter
 
 
 
-The scenario used in this project is as follows:
+The **scenario used in this project** is as follows:
 
 - Describe scenario
 We have different types of server(for now, let's consider two types: _MailServer_ and _FTPServer_). We have a troubleshooting application which takes server name as input from command line based on the name of the server, it will resolve the issue. 
@@ -49,8 +49,97 @@ We have different types of server(for now, let's consider two types: _MailServer
 
 Please note that we do not know which type of server the user will input before the application starts running. It is in this scenario that factory method is well suited as we can create the appropriate server object at runtime using polymorphism.  
 
+**Solution:**
 
-- Explain the solution
+First, we create an interface _IServer_ which contains the `resolve()` method:
+
+```java 
+public interface IServer {
+
+	/**
+	 * Resolves any network related issues for a specific server
+	 */
+	public void resolve();
+}
+
+```
+
+Next, we created _MailServer_ and _FTPServer_ classes which implement _IServer_ interface. For example, MailServer class is shown below:
+
+```java
+
+public class MailServer implements IServer{
+
+	@Override
+	public void resolve() {
+		System.out.println("Performing some complex Mail server resolution algolrithm.");
+		System.out.println("Mail Server is fixed.");
+	}
+
+}
+
+```
+
+ Now, in the _servermanagement_ package, we created _ServerFactory_ class which contains `getServer()` method. The main idea to understand is that this method return _IServer_ object instead any concrete object. Due to this nature, when it takes server name as input, it goes through a switch-case statement and generate an instance of the appropriate Server class but since all server classes are also instance of IServer interface(via implementation), we can return IServer object as retur value. The code looks as follows:
+ 
+```java
+/**
+ * This class will pump out different types of server objects.
+ * 
+ * @author umer
+ *
+ */
+public class ServerFactory {
+
+	public static IServer getServer(String serverType) throws Exception {
+		// This contains the logic of which server object to invoke.
+		switch (serverType) {
+		case "mail":
+			return new MailServer();
+		case "ftp":
+			return new FTPServer();
+		/**
+		 * In case we have additional servers in the future such as APP Server or Test
+		 * Server, We can simply add another case here with a class that implements the
+		 * IServer interface.
+		 * 
+		 * 
+		 */
+		default:
+			throw new Exception("Invalid server type");
+		}
+	}
+}
+```
+
+Inside the _usage_ package, main() method simulates taking user input and fixing the relevant server type.  
+
+```java
+
+
+public class ServerManagementTool {
+
+	public static void main(String[] args) throws Exception {
+		/**
+		 * This user input takes place of a GUI drop down, so that we can keep the
+		 * implementation simple and focus on the implementation and usage of Factory
+		 * pattern
+		 * 
+		 * Helps us in determining what type of server does the user wants to resolve?
+		 */
+		Scanner input = new Scanner(System.in);
+		System.out.println("Which server do you want to resolve?");
+		String serverName = input.nextLine();
+		
+		/**
+		 * We do not specify explicitly i the code which server to initialize. This is taken care of by the factory itself.
+		 */
+		IServer server=ServerFactory.getServer(serverName);
+		server.resolve();
+	}
+}
+
+```
 
 **Extensibility:**
 - Explain how further server types can be handled in the future. 
