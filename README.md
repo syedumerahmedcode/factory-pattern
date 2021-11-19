@@ -23,7 +23,7 @@ The Factory Method separates object(also known as product in some books) constru
 
 ## Out Of Scope
 
-- To be defined.
+Since the main idea is to implement factory method pattern in code, tests are out of scope of this project. However, there can be scenarios in which test classes can also used different types of objects at runtime using factory method pattern. 
 
 ## Explanation Factory Pattern
 
