@@ -31,7 +31,12 @@ The definition from `Gang of Four` book is as follows:
 
 `"Define an interface for creating an object, but you let the subclasses decide which class to instantiate. Factory method lets a class defer initiation to sub-classes."`
 
-- To be expanded further.
+Basically, this means that we have an interface and classes implement that interface. Eventually, there is a class which takes care of initialization of the appropriate instance of the class but instead of delivering a concrete object, it delivers an object of type: Interface(as we have done in the project).
+
+**Reasons for using factory method pattern:**
+
+- We know that when to create an object of required functionality(s) but type of object will remain undecided or it will be decided on dynamic parameters being passed. or more simply put: 
+- Class cannot anticipate the class of objects it must create.
 
 
 
@@ -79,8 +84,8 @@ Feature requests, issues, pull requests and questions are welcome.
 - [1](https://www.youtube.com/watch?v=mTzDf_EZ1aM): Understanding The Factory Design Pattern **(Youtube)** **[Primary Video resource for this project]**
 - [2](https://www.youtube.com/watch?v=EcFVTgRHJLM): Factory Method Pattern – Design Patterns **(Youtube)**
 - [3](https://www.youtube.com/watch?v=v-GiuMmsXj4): Abstract Factory Pattern – Design Patterns **(Youtube)** **[What this example is not!!!]**
-- [4](https://github.com/RefactoringGuru/design-patterns-java/tree/master/src/refactoring_guru/factory_method/example):  RefactoringGuru /
-design-patterns-java **(GitHub)**
+- [4](https://github.com/RefactoringGuru/design-patterns-java/tree/master/src/refactoring_guru/factory_method/example):  RefactoringGuru/design-patterns-java **(GitHub)**
+- [5](https://stackoverflow.com/questions/69849/factory-pattern-when-to-use-factory-methods): Factory Pattern. When to use factory methods? **(Stack Overflow)**
 
 ## Contact Information
 
