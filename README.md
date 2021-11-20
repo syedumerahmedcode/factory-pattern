@@ -142,7 +142,8 @@ public class ServerManagementTool {
 ```
 
 **Extensibility:**
-- Explain how further server types can be handled in the future. 
+
+So, in future, if new servers are to be added(for example, test server), it can simply implement the _IServer_ interface, have a case in the _SereverManagementTool_ class which can be invoked by passing the parameter from the main method.
 
 ## Explanation Other Important Points
 
