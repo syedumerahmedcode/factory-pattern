@@ -151,7 +151,11 @@ So, in future, if new servers are to be added(for example, test server), it can 
 
 **Possible use cases in which factory method applies:**
 
-- define use cases(Give 2-3 use cases)
+Some other uses cases in which Factory method pattern is applicable:
+
+- When we have to map a logistics company where currently we have land logistics as well as sea logistics, with the possibility of air logistics being added in the future. In this case, logistics can be an interface and any specific kind of logistic can implement this interface. Then, they can be switched based on a switch-case.
+
+-  Another example can be Notification service which implement _SMSNotification_, _PushNotification_ or _EmailNotification_. This can also be easily implemented via Factory Method pattern. 
 
 ## Technologies Used
 
