@@ -147,7 +147,6 @@ So, in future, if new servers are to be added(for example, test server), it can 
 
 ## Explanation Other Important Points
 
-- To be defined.
 
 **Possible use cases in which factory method applies:**
 
