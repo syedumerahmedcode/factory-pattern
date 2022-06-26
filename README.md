@@ -45,7 +45,7 @@ The **scenario used in this project** is as follows:
 - Describe scenario
 We have different types of server(for now, let's consider two types: _MailServer_ and _FTPServer_). We have a troubleshooting application which takes server name as input from command line based on the name of the server, it will resolve the issue. 
 
-- Insert architecture diagram
+![FactoryMethodPatternArchitectureOnWhiteBoard](https://github.com/syedumerahmedcode/factory-pattern/tree/master/src/main/resources/FactoryMethodPatternArchitecture.jpeg)
 
 Please note that we do not know which type of server the user will input before the application starts running. It is in this scenario that factory method is well suited as we can create the appropriate server object at runtime using polymorphism.  
 
